@@ -2,9 +2,9 @@ file_format: "1"
 id: zboard
 name: Zboard
 type: shield
-url: https://github.com/oldmanz/zboard
+url: https://github.com/oldmanz/zmk-zboard
 requires: [pro_micro]
-exposes: [i2c_oled]
+exposes: []
 features:
   - keys
 siblings:
