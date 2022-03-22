@@ -43,11 +43,6 @@ combos {
     
 };
 
-&caps_word {
-    continue-list = <UNDERSCORE MINUS BSPC>;
-};
-
-
 
         keymap {
                 compatible = "zmk,keymap";
