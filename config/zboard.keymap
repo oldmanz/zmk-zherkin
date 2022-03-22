@@ -10,8 +10,8 @@
 
 
 &mt {
-  //  flavor = "tap-preferred";
-   // tapping_term_ms = <200>;
+   flavor = "tap-preferred";
+   tapping_term_ms = <200>;
 };
 
 / { 
@@ -22,6 +22,8 @@
 #define SYM 4
 #define NUM 5
 #define FUN 6
+#define ALT 7
+#define QWERTY 8
 
 combos {
     compatible = "zmk,combos";
@@ -29,7 +31,7 @@ combos {
     combo_caps {
         layers = <0>;
         timeout-ms = <50>;
-        key-positions = <14 15>;
+        key-positions = <13 16>;
         bindings = <&caps_word>;
     };
     
@@ -44,12 +46,14 @@ combos {
                 
        		colemak_layer {
 		bindings = <
-		&kp Q      &kp W       &kp F          &kp P          &kp G              &kp J         &kp L         &kp U         &kp Y        &kp SQT 
+		&lt ALT Q      &kp W       &kp F          &kp P          &kp G              &kp J         &kp L         &kp U         &kp Y        &kp SQT 
 		&mt LGUI A &mt LALT R  &mt LCTRL S    &mt LSHFT T    &kp D              &kp H         &mt RSHFT N   &mt RCTRL E   &mt LALT I   &mt RGUI O
 		&kp Z      &mt RALT X  &kp C          &kp V          &kp B              &kp K         &kp M         &kp COMMA     &mt RALT DOT &kp FSLH
           				       &lt MEDIA ESC &lt NAV SPACE &lt MOUSE TAB        &lt SYM ENTER &lt NUM BSPC  &lt FUN DEL
 		>;
 		};
+		
+		
 
        		media_layer {
                         bindings = <
@@ -89,7 +93,7 @@ combos {
 
                 num_layer {
                         bindings = <
-         &kp LBKT   &kp N7      &kp N8         &kp N9         &kp RBKT           &none         &none        &none         &none        &none   
+         &kp LBKT   &kp N7      &kp N8         &kp N9         &kp RBKT           &to 0         &to 7        &none         &none        &none   
          &kp SEMI   &kp N4      &kp N5         &kp N6         &kp EQUAL          &none         &kp RSHFT    &kp RCTRL     &kp LALT     &kp RGUI
          &kp GRAVE  &kp N1      &kp N2         &kp N3         &kp BSLH           &none         &none        &none         &kp RALT     &none   
                                	       &kp DOT        &kp N0  &kp MINUS            &none &none         &none
@@ -104,6 +108,24 @@ combos {
                                 			   &kp ESC        &kp SPACE  &none    &none        &none        &none
                         >;
                 };
+		
+		alt_layer {
+                        bindings = <
+        &none      &none       &none          &none          &none           &none         &none        &none         &none        &none   
+        &kp LGUI   &kp LALT    &kp LCTRL      &kp LSHFT      &none           &none         &kp RSHFT    &kp RCTRL     &kp LALT     &kp RGUI
+        &none      &kp RALT    &none          &none          &none           &none         &none        &none         &kp RALT     &none   
+                               	           &kp DEL &kp BSPC &kp ENTER        &kp TAB &kp SPACE &kp ESC               
+                        >;
+                };
+		
+		qwerty_layer {
+		bindings = <
+		&lt ALT Q      &kp W       &kp E          &kp R          &kp T              &kp Y         &kp U         &kp I         &kp O        &kp P 
+		&mt LGUI A &mt LALT S  &mt LCTRL D    &mt LSHFT F    &kp G              &kp H         &mt RSHFT J   &mt RCTRL K   &mt LALT L  &mt RGUI SEMI
+		&kp Z      &mt RALT X  &kp C          &kp V          &kp B              &kp N         &kp M         &kp COMMA     &mt RALT DOT &kp FSLH
+          				       &lt MEDIA ESC &lt NAV SPACE &lt MOUSE TAB        &lt SYM ENTER &lt NUM BSPC  &lt FUN DEL
+		>;
+		};
         
 	};
 };
