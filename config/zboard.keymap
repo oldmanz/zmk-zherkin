@@ -59,7 +59,7 @@ combos {
 		
 		qwerty_layer {
 		bindings = <
-		&lt ALT Q      &kp W       &kp E          &kp R          &kp T              &kp Y         &kp U         &kp I         &kp O        &lt ALT P 
+		&lt ALT Q      &kp W       &kp E          &kp R          &kp T           &kp Y         &kp U         &kp I         &kp O        &lt ALT P 
 		&mt LGUI A  &mt LALT S  &mt LCTRL D    &mt LSHFT F    &kp G              &kp H         &mt RSHFT J   &mt RCTRL K   &mt LALT L  &mt RGUI SEMI
 		&kp Z      &mt RALT X  &kp C          &kp V          &kp B              &kp N         &kp M         &kp COMMA     &mt RALT DOT &kp FSLH
           				       &lt MEDIA ESC &lt NAV SPACE &lt MOUSE TAB        &lt SYM ENTER &lt NUM BSPC  &lt FUN DEL
@@ -115,10 +115,10 @@ combos {
 
                 mouse_layer {
                         bindings = <
-   		&none      &none       &none          &none          &none              &none         &none        &mo MOVE_UP        &none        &none  
-   		&kp LGUI   &kp LALT    &kp LCTRL      &kp LSHFT      &none              &mo SCROLL_LEFT  &mo MOVE_LEFT     &mo MOVE_DOWN      &mo MOVE_RIGHT    &mo SCROLL_RIGHT
-   		&none      &kp RALT    &none          &none          &none              &none         &mo SCROLL_DOWN   &none         &mo SCROLL_UP    &none  
-                          	   &none          &none          &none              &mo MB1     &mo MB3    &mo MB2    
+   		&none      &none       &none          &none          &none              &none         &none        &mmv MOVE_UP        &none        &none  
+   		&kp LGUI   &kp LALT    &kp LCTRL      &kp LSHFT      &none              &mwh SCROLL_LEFT  &mmv MOVE_LEFT     &mmv MOVE_DOWN      &mmv MOVE_RIGHT    &mwh SCROLL_RIGHT
+   		&none      &kp RALT    &none          &none          &none              &none         &mwh SCROLL_DOWN   &none         &mwh SCROLL_UP    &none  
+                          	   &none          &none          &none              &mkp MB1     &mkp MB3    &mkp MB2    
                         >;
                 };
 
