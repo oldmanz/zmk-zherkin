@@ -69,9 +69,9 @@ combos {
 		xtra1_layer {
 		bindings = <
 		&lt ALT Q      &kp W       &kp E          &kp R          &kp T              &kp Y         &kp U         &kp I         &kp O        &lt ALT P 
-		&mt LGUI A  &mt LALT S  &mt LCTRL D    &mt LSHFT F    &kp G              &kp H         &mt RSHFT J   &mt RCTRL K   &mt LALT L  &mt RGUI SEMI
+		&mt LGUI A  &mt LALT S  &mt LCTRL D    &mt LSHFT F    &kp G              &kp H         &mt RSHFT J   &mt RCTRL K   &mt LALT L  &mt RGUI BSPC
 		&kp Z      &mt RALT X  &kp C          &kp V          &kp B              &kp N         &kp M         &kp COMMA     &mt RALT DOT &kp FSLH
-          				       &lt MEDIA ESC &lt NAV SPACE &lt MOUSE TAB        &lt SYM ENTER &lt NUM BSPC  &lt FUN DEL
+          				       &lt MEDIA ESC &lt NAV SPACE &lt MOUSE TAB        &lt SYM ENTER &lt NUM SPACE  &lt FUN DEL
 		>;
 		};
 		
