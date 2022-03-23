@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/mouse.h>
 
 
 &mt {
@@ -114,10 +115,10 @@ combos {
 
                 mouse_layer {
                         bindings = <
-   		&none      &none       &none          &none          &none              &none         &none        &kp UP        &none        &none  
-   		&kp LGUI   &kp LALT    &kp LCTRL      &kp LSHFT      &none              &kp HOME      &kp LEFT     &kp DOWN      &kp RIGHT    &kp END
-   		&none      &kp RALT    &none          &none          &none              &none         &kp PG_DN    &none         &kp PG_UP    &none  
-                          	   &none          &none          &none              &kp ENTER     &kp BSPC     &kp DEL     
+   		&none      &none       &none          &none          &none              &none         &none        &kp MOVE_UP        &none        &none  
+   		&kp LGUI   &kp LALT    &kp LCTRL      &kp LSHFT      &none              &kp SCROLL_LEFT  &kp MOVE_LEFT     &kp MOVE_DOWN      &kp MOVE_RIGHT    &kp SCROLL_RIGHT
+   		&none      &kp RALT    &none          &none          &none              &none         &kp SCROLL_DOWN   &none         &kp SCROLL_UP    &none  
+                          	   &none          &none          &none              &kp MB1     &kp MB3    &kp MB2    
                         >;
                 };
 
