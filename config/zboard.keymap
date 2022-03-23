@@ -115,10 +115,10 @@ combos {
 
                 mouse_layer {
                         bindings = <
-   		&none      &none       &none          &none          &none              &none         &none        &kp MOVE_UP        &none        &none  
-   		&kp LGUI   &kp LALT    &kp LCTRL      &kp LSHFT      &none              &kp SCROLL_LEFT  &kp MOVE_LEFT     &kp MOVE_DOWN      &kp MOVE_RIGHT    &kp SCROLL_RIGHT
-   		&none      &kp RALT    &none          &none          &none              &none         &kp SCROLL_DOWN   &none         &kp SCROLL_UP    &none  
-                          	   &none          &none          &none              &kp MB1     &kp MB3    &kp MB2    
+   		&none      &none       &none          &none          &none              &none         &none        &mo MOVE_UP        &none        &none  
+   		&kp LGUI   &kp LALT    &kp LCTRL      &kp LSHFT      &none              &mo SCROLL_LEFT  &mo MOVE_LEFT     &mo MOVE_DOWN      &mo MOVE_RIGHT    &mo SCROLL_RIGHT
+   		&none      &kp RALT    &none          &none          &none              &none         &mo SCROLL_DOWN   &none         &mo SCROLL_UP    &none  
+                          	   &none          &none          &none              &mo MB1     &mo MB3    &mo MB2    
                         >;
                 };
 
